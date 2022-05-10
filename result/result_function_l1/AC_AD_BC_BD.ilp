@@ -1,0 +1,23 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ P3: - WB1n + WB1p - WD1n + WD1p + WT1n - WT1p <= -1
+ P5: - WB1n + WB1p - WC1n + WC1p + WT1n - WT1p >= 0
+ P10: - WA1n + WA1p - WD1n + WD1p + WT1n - WT1p >= 0
+ P12: - WA1n + WA1p - WC1n + WC1p + WT1n - WT1p <= -1
+Bounds
+ WA1n free
+ WA1p free
+ WB1n free
+ WB1p free
+ WC1n free
+ WC1p free
+ WD1n free
+ WD1p free
+ WT1n free
+ WT1p free
+Generals
+ WA1n WA1p WB1n WB1p WC1n WC1p WD1n WD1p WT1n WT1p
+End

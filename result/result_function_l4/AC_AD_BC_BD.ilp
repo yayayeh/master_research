@@ -1,0 +1,67 @@
+\ Model _copy
+\ LP format - for model browsing. Use MPS format to capture full model detail.
+Minimize
+ 
+Subject To
+ P3: - 24 WB1n + 24 WB1p - 12 WB2n + 12 WB2p - 8 WB3n + 8 WB3p - 6 WB4n
+   + 6 WB4p - 24 WD1n + 24 WD1p - 12 WD2n + 12 WD2p - 8 WD3n + 8 WD3p
+   - 6 WD4n + 6 WD4p + 24 WT1n - 24 WT1p + 12 WT2n - 12 WT2p + 8 WT3n
+   - 8 WT3p + 6 WT4n - 6 WT4p <= -1
+ P5: - 24 WB1n + 24 WB1p - 12 WB2n + 12 WB2p - 8 WB3n + 8 WB3p - 6 WB4n
+   + 6 WB4p - 24 WC1n + 24 WC1p - 12 WC2n + 12 WC2p - 8 WC3n + 8 WC3p
+   - 6 WC4n + 6 WC4p + 24 WT1n - 24 WT1p + 12 WT2n - 12 WT2p + 8 WT3n
+   - 8 WT3p + 6 WT4n - 6 WT4p >= 0
+ P10: - 24 WA1n + 24 WA1p - 12 WA2n + 12 WA2p - 8 WA3n + 8 WA3p - 6 WA4n
+   + 6 WA4p - 24 WD1n + 24 WD1p - 12 WD2n + 12 WD2p - 8 WD3n + 8 WD3p
+   - 6 WD4n + 6 WD4p + 24 WT1n - 24 WT1p + 12 WT2n - 12 WT2p + 8 WT3n
+   - 8 WT3p + 6 WT4n - 6 WT4p >= 0
+ P12: - 24 WA1n + 24 WA1p - 12 WA2n + 12 WA2p - 8 WA3n + 8 WA3p - 6 WA4n
+   + 6 WA4p - 24 WC1n + 24 WC1p - 12 WC2n + 12 WC2p - 8 WC3n + 8 WC3p
+   - 6 WC4n + 6 WC4p + 24 WT1n - 24 WT1p + 12 WT2n - 12 WT2p + 8 WT3n
+   - 8 WT3p + 6 WT4n - 6 WT4p <= -1
+Bounds
+ WA1n free
+ WA1p free
+ WA2n free
+ WA2p free
+ WA3n free
+ WA3p free
+ WA4n free
+ WA4p free
+ WB1n free
+ WB1p free
+ WB2n free
+ WB2p free
+ WB3n free
+ WB3p free
+ WB4n free
+ WB4p free
+ WC1n free
+ WC1p free
+ WC2n free
+ WC2p free
+ WC3n free
+ WC3p free
+ WC4n free
+ WC4p free
+ WD1n free
+ WD1p free
+ WD2n free
+ WD2p free
+ WD3n free
+ WD3p free
+ WD4n free
+ WD4p free
+ WT1n free
+ WT1p free
+ WT2n free
+ WT2p free
+ WT3n free
+ WT3p free
+ WT4n free
+ WT4p free
+Generals
+ WA1n WA1p WA2n WA2p WA3n WA3p WA4n WA4p WB1n WB1p WB2n WB2p WB3n WB3p WB4n
+ WB4p WC1n WC1p WC2n WC2p WC3n WC3p WC4n WC4p WD1n WD1p WD2n WD2p WD3n WD3p
+ WD4n WD4p WT1n WT1p WT2n WT2p WT3n WT3p WT4n WT4p
+End

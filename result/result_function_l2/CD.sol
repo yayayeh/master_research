@@ -1,0 +1,20 @@
+# Objective value = 4
+WC1n 0
+WC1p 1
+WC2n 0
+WC2p 0
+WD1n 0
+WD1p 1
+WD2n 0
+WD2p 0
+WT1n 0
+WT1p 2
+WT2n 0
+WT2p 0
+5 5
+a 1
+b 1
+c 1
+d 1
+e 1
+f 1

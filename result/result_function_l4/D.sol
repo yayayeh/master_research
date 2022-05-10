@@ -1,0 +1,26 @@
+# Objective value = 2
+WD1n 0
+WD1p 1
+WD2n 0
+WD2p 0
+WD3n 0
+WD3p 0
+WD4n 0
+WD4p 0
+WT1n 0
+WT1p 1
+WT2n 0
+WT2p 0
+WT3n 0
+WT3p 0
+WT4n 0
+WT4p 0
+5 5
+a 1
+b 1
+c 1
+d 1
+e 1
+f 1
+g 1
+h 1

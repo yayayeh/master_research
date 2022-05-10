@@ -1,0 +1,1218 @@
+==================================================================
+ABCD.lp
+Academic license - for non-commercial use only - expires 2023-04-15
+Using license file /home/yaya/gurobi.lic
+Read LP format model from file ABCD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x58de04d2
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.000000e+00, 9 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.00000    0    4          -    4.00000      -     -    0s
+H    0     0                      12.0000000    4.00000  66.7%     -    0s
+H    0     0                       8.0000000    4.00000  50.0%     -    0s
+     0     0     cutoff    0         8.00000    8.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 4
+  Mod-K: 3
+
+Explored 1 nodes (12 simplex iterations) in 0.01 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: 8 12 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+Optimal objective: 8
+0.0113849639893
+==================================================================
+BCD.lp
+Read LP format model from file BCD.lp
+Reading time = 0.00 seconds
+: 24 rows, 25 columns, 120 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 24 rows, 25 columns and 120 nonzeros
+Model fingerprint: 0x072cbd94
+Variable types: 1 continuous, 24 integer (8 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 16 rows and 9 columns
+Presolve time: 0.00s
+Presolved: 8 rows, 16 columns, 80 nonzeros
+Variable types: 0 continuous, 16 integer (0 binary)
+Found heuristic solution: objective 30.0000000
+
+Root relaxation: objective 3.000000e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.00000    0    4   30.00000    3.00000  90.0%     -    0s
+H    0     0                       7.0000000    3.00000  57.1%     -    0s
+H    0     0                       6.0000000    3.00000  50.0%     -    0s
+     0     0     cutoff    0         6.00000    6.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 3
+  Mod-K: 4
+
+Explored 1 nodes (11 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 6 7 30 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+Optimal objective: 6
+0.00305104255676
+==================================================================
+ACD_BCD.lp
+Read LP format model from file ACD_BCD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x32614ad6
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 5.500000e+00, 9 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.50000    0    3          -    5.50000      -     -    0s
+H    0     0                      19.0000000    5.50000  71.1%     -    0s
+H    0     0                      11.0000000    5.50000  50.0%     -    0s
+H    0     0                      10.0000000    5.50000  45.0%     -    0s
+     0     0     cutoff    0        10.00000   10.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 5
+
+Explored 1 nodes (14 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 10 11 19 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+Optimal objective: 10
+0.00358414649963
+==================================================================
+ABD_ACD_BCD.lp
+Read LP format model from file ABD_ACD_BCD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xadcb82d2
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 29.0000000
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.500000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.50000    0    3   29.00000    4.50000  84.5%     -    0s
+H    0     0                      10.0000000    4.50000  55.0%     -    0s
+H    0     0                       9.0000000    4.50000  50.0%     -    0s
+     0     0     cutoff    0         9.00000    9.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 6
+
+Explored 1 nodes (13 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 9 10 29 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+Optimal objective: 9
+0.00430798530579
+==================================================================
+ABC_ABD_ACD_BCD.lp
+Read LP format model from file ABC_ABD_ACD_BCD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x2a639cb2
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+Found heuristic solution: objective 43.0000000
+
+Root relaxation: objective 3.500000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.50000    0    5   43.00000    3.50000  91.9%     -    0s
+H    0     0                       8.0000000    3.50000  56.2%     -    0s
+H    0     0                       7.0000000    3.50000  50.0%     -    0s
+     0     0     cutoff    0         7.00000    7.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 8
+  Mod-K: 2
+
+Explored 1 nodes (13 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 7 8 43 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+Optimal objective: 7
+0.00391888618469
+==================================================================
+CD.lp
+Read LP format model from file CD.lp
+Reading time = 0.00 seconds
+: 16 rows, 19 columns, 62 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 16 rows, 19 columns and 62 nonzeros
+Model fingerprint: 0xdd3b99ba
+Variable types: 1 continuous, 18 integer (6 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 12 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 4 rows, 12 columns, 32 nonzeros
+Variable types: 0 continuous, 12 integer (0 binary)
+
+Root relaxation: objective 2.000000e+00, 4 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.00000    0    2   14.00000    2.00000  85.7%     -    0s
+H    0     0                       4.0000000    2.00000  50.0%     -    0s
+
+Cutting planes:
+  MIR: 2
+
+Explored 1 nodes (4 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: 4 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+Optimal objective: 4
+0.00139307975769
+==================================================================
+CD_ABD.lp
+Read LP format model from file CD_ABD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xa7367144
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 6.000000e+00, 8 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.00000    0    4          -    6.00000      -     -    0s
+H    0     0                      14.0000000    6.00000  57.1%     -    0s
+H    0     0                      11.0000000    6.00000  45.5%     -    0s
+H    0     0                      10.0000000    6.00000  40.0%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 3
+  Mod-K: 2
+
+Explored 1 nodes (8 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 10 11 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+Optimal objective: 10
+0.00363206863403
+==================================================================
+CD_ABC_ABD.lp
+Read LP format model from file CD_ABC_ABD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x84b1fb59
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 26.0000000
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 5.000000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0    2   26.00000    5.00000  80.8%     -    0s
+H    0     0                      16.0000000    5.00000  68.8%     -    0s
+H    0     0                      10.0000000    5.00000  50.0%     -    0s
+H    0     0                       8.0000000    5.00000  37.5%     -    0s
+
+Cutting planes:
+  MIR: 5
+  Mod-K: 1
+
+Explored 1 nodes (7 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 8 10 16 26 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+Optimal objective: 8
+0.00261211395264
+==================================================================
+BD_CD.lp
+Read LP format model from file BD_CD.lp
+Reading time = 0.00 seconds
+: 24 rows, 25 columns, 120 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 24 rows, 25 columns and 120 nonzeros
+Model fingerprint: 0xcab8505d
+Variable types: 1 continuous, 24 integer (8 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 27.0000000
+Presolve removed 16 rows and 9 columns
+Presolve time: 0.00s
+Presolved: 8 rows, 16 columns, 80 nonzeros
+Variable types: 0 continuous, 16 integer (0 binary)
+
+Root relaxation: objective 3.500000e+00, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.50000    0    3   27.00000    3.50000  87.0%     -    0s
+H    0     0                       9.0000000    3.50000  61.1%     -    0s
+H    0     0                       8.0000000    3.50000  56.2%     -    0s
+H    0     0                       7.0000000    3.50000  50.0%     -    0s
+     0     0    7.00000    0    4    7.00000    7.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 4
+
+Explored 1 nodes (11 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 7 8 9 27 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+Optimal objective: 7
+0.00223016738892
+==================================================================
+BD_CD_ABC.lp
+Read LP format model from file BD_CD_ABC.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x61ce6c1d
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 6.500000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.50000    0    3          -    6.50000      -     -    0s
+H    0     0                      12.0000000    6.50000  45.8%     -    0s
+H    0     0                      11.0000000    6.50000  40.9%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 3
+
+Explored 1 nodes (7 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: 11 12 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.100000000000e+01, best bound 1.100000000000e+01, gap 0.0000%
+Optimal objective: 11
+0.00359296798706
+==================================================================
+BC_BD_CD.lp
+Read LP format model from file BC_BD_CD.lp
+Reading time = 0.00 seconds
+: 24 rows, 25 columns, 120 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 24 rows, 25 columns and 120 nonzeros
+Model fingerprint: 0x91024169
+Variable types: 1 continuous, 24 integer (8 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 12.0000000
+Presolve removed 16 rows and 9 columns
+Presolve time: 0.00s
+Presolved: 8 rows, 16 columns, 80 nonzeros
+Variable types: 0 continuous, 16 integer (0 binary)
+
+Root relaxation: objective 2.500000e+00, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.50000    0    3   12.00000    2.50000  79.2%     -    0s
+H    0     0                       9.0000000    2.50000  72.2%     -    0s
+H    0     0                       5.0000000    2.50000  50.0%     -    0s
+     0     0     cutoff    0         5.00000    5.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 5
+
+Explored 1 nodes (7 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 5 9 12 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+Optimal objective: 5
+0.00187182426453
+==================================================================
+AD_BD_CD.lp
+Read LP format model from file AD_BD_CD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xcda7b93b
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 35.0000000
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 5.000000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0    4   35.00000    5.00000  85.7%     -    0s
+H    0     0                      12.0000000    5.00000  58.3%     -    0s
+H    0     0                      11.0000000    5.00000  54.5%     -    0s
+H    0     0                      10.0000000    5.00000  50.0%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 5
+
+Explored 1 nodes (7 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 10 11 12 35 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+Optimal objective: 10
+0.00260996818542
+==================================================================
+AD_BD_CD_ABC.lp
+Read LP format model from file AD_BD_CD_ABC.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x771f5a26
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 14.0000000
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.000000e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.00000    0    4   14.00000    4.00000  71.4%     -    0s
+H    0     0                      12.0000000    4.00000  66.7%     -    0s
+H    0     0                       9.0000000    4.00000  55.6%     -    0s
+H    0     0                       8.0000000    4.00000  50.0%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 7
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 8 9 12 14 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 8.000000000000e+00, best bound 8.000000000000e+00, gap 0.0000%
+Optimal objective: 8
+0.00238800048828
+==================================================================
+AD_BC.lp
+Read LP format model from file AD_BC.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xa417fdcb
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: infeasible, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (5 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Model is infeasible
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        36         -         0        21         -           0s
+        4         4         -         0         0         -           0s
+
+IIS computed: 4 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+IIS written to file 'model.ilp'
+0.00249195098877
+==================================================================
+AD_BC_CD.lp
+Read LP format model from file AD_BC_CD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x4caa114c
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: infeasible, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Model is infeasible
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        36         -         0        21         -           0s
+        4         4         -         0         0         -           0s
+
+IIS computed: 4 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+IIS written to file 'model.ilp'
+0.0022919178009
+==================================================================
+AD_BC_BD_CD.lp
+Read LP format model from file AD_BC_BD_CD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xd16ad244
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 6.000000e+00, 8 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    6.00000    0    2          -    6.00000      -     -    0s
+H    0     0                      41.0000000    6.00000  85.4%     -    0s
+H    0     0                      10.0000000    6.00000  40.0%     -    0s
+H    0     0                       9.0000000    6.00000  33.3%     -    0s
+     0     0     cutoff    0         9.00000    9.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 4
+
+Explored 1 nodes (13 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 9 10 41 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+Optimal objective: 9
+0.00358486175537
+==================================================================
+AC_AD_BC_BD.lp
+Read LP format model from file AC_AD_BC_BD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xaae94c04
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: infeasible, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0               - infeasible      -     -    0s
+
+Explored 0 nodes (5 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 0
+
+Model is infeasible
+Best objective -, best bound -, gap -
+
+Model is infeasible
+
+Computing Irreducible Inconsistent Subsystem (IIS)...
+
+           Constraints          |            Bounds           |  Runtime
+      Min       Max     Guess   |   Min       Max     Guess   |
+--------------------------------------------------------------------------
+        0        36         -         0        21         -           0s
+        4         4         -         0         0         -           0s
+
+IIS computed: 4 constraints, 0 bounds
+IIS runtime: 0.00 seconds
+IIS written to file 'model.ilp'
+0.00248885154724
+==================================================================
+AC_AD_BC_BD_CD.lp
+Read LP format model from file AC_AD_BC_BD_CD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xbef02a12
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 43.0000000
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 4.500000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.50000    0    3   43.00000    4.50000  89.5%     -    0s
+H    0     0                      12.0000000    4.50000  62.5%     -    0s
+H    0     0                      10.0000000    4.50000  55.0%     -    0s
+H    0     0                       9.0000000    8.37500  6.94%     -    0s
+     0     0    9.00000    0    7    9.00000    9.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 5
+
+Explored 1 nodes (14 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 9 10 12 43 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+Optimal objective: 9
+0.00320601463318
+==================================================================
+AB_AC_AD_BC_BD_CD.lp
+Read LP format model from file AB_AC_AD_BC_BD_CD.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x6079113b
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 21.0000000
+Presolve removed 20 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 16 rows, 20 columns, 192 nonzeros
+Variable types: 0 continuous, 20 integer (0 binary)
+
+Root relaxation: objective 3.000000e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.00000    0    4   21.00000    3.00000  85.7%     -    0s
+H    0     0                       7.0000000    3.00000  57.1%     -    0s
+H    0     0                       6.0000000    3.00000  50.0%     -    0s
+     0     0     cutoff    0         6.00000    6.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 7
+
+Explored 1 nodes (9 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 6 7 21 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+Optimal objective: 6
+0.00263500213623
+==================================================================
+D.lp
+Read LP format model from file D.lp
+Reading time = 0.00 seconds
+: 10 rows, 13 columns, 32 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 10 rows, 13 columns and 32 nonzeros
+Model fingerprint: 0xd0c65607
+Variable types: 1 continuous, 12 integer (4 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 2.0000000
+Presolve removed 8 rows and 7 columns
+Presolve time: 0.00s
+Presolved: 2 rows, 6 columns, 10 nonzeros
+Variable types: 0 continuous, 6 integer (0 binary)
+
+Explored 0 nodes (0 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 1: 2 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 2.000000000000e+00, best bound 2.000000000000e+00, gap 0.0000%
+Optimal objective: 2
+0.000709056854248
+==================================================================
+D_ABC.lp
+Read LP format model from file D_ABC.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xec298645
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 21 rows and 13 columns
+Presolve time: 0.00s
+Presolved: 15 rows, 18 columns, 158 nonzeros
+Variable types: 0 continuous, 18 integer (0 binary)
+
+Root relaxation: objective 4.500000e+00, 7 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.50000    0    5          -    4.50000      -     -    0s
+H    0     0                      42.0000000    4.50000  89.3%     -    0s
+H    0     0                      10.0000000    4.50000  55.0%     -    0s
+H    0     0                       9.0000000    4.50000  50.0%     -    0s
+     0     0     cutoff    0         9.00000    9.00000  0.00%     -    0s
+
+Cutting planes:
+  MIR: 4
+  Mod-K: 2
+
+Explored 1 nodes (12 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 9 10 42 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 9.000000000000e+00, best bound 9.000000000000e+00, gap 0.0000%
+Optimal objective: 9
+0.00322580337524
+==================================================================
+D_BC.lp
+Read LP format model from file D_BC.lp
+Reading time = 0.00 seconds
+: 24 rows, 25 columns, 120 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 24 rows, 25 columns and 120 nonzeros
+Model fingerprint: 0xc5f216f6
+Variable types: 1 continuous, 24 integer (8 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 15.0000000
+Presolve removed 17 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 7 rows, 14 columns, 58 nonzeros
+Variable types: 0 continuous, 14 integer (0 binary)
+
+Root relaxation: objective 3.000000e+00, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.00000    0    2   15.00000    3.00000  80.0%     -    0s
+H    0     0                       7.0000000    3.00000  57.1%     -    0s
+H    0     0                       6.0000000    3.00000  50.0%     -    0s
+     0     0     cutoff    0         6.00000    6.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 3
+
+Explored 1 nodes (7 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 6 7 15 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.000000000000e+00, best bound 6.000000000000e+00, gap 0.0000%
+Optimal objective: 6
+0.00277900695801
+==================================================================
+D_AC_BC.lp
+Read LP format model from file D_AC_BC.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xdc120740
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 23.0000000
+Presolve removed 23 rows and 13 columns
+Presolve time: 0.00s
+Presolved: 13 rows, 18 columns, 130 nonzeros
+Variable types: 0 continuous, 18 integer (0 binary)
+
+Root relaxation: objective 5.000000e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    5.00000    0    4   23.00000    5.00000  78.3%     -    0s
+H    0     0                      11.0000000    5.00000  54.5%     -    0s
+H    0     0                      10.0000000    5.00000  50.0%     -    0s
+     0     0    9.00000    0    2   10.00000    9.00000  10.0%     -    0s
+     0     0     cutoff    0        10.00000   10.00000  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 2
+  MIR: 3
+  Mod-K: 1
+
+Explored 1 nodes (14 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 10 11 23 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.000000000000e+01, best bound 1.000000000000e+01, gap 0.0000%
+Optimal objective: 10
+0.00445795059204
+==================================================================
+D_AB_AC_BC.lp
+Read LP format model from file D_AB_AC_BC.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0x2201d87b
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Found heuristic solution: objective 22.0000000
+Presolve removed 24 rows and 13 columns
+Presolve time: 0.00s
+Presolved: 12 rows, 18 columns, 116 nonzeros
+Variable types: 0 continuous, 18 integer (0 binary)
+
+Root relaxation: objective 3.500000e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    3.50000    0    3   22.00000    3.50000  84.1%     -    0s
+H    0     0                       8.0000000    3.50000  56.2%     -    0s
+H    0     0                       7.0000000    3.50000  50.0%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 4
+  Mod-K: 1
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 3: 7 8 22 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+Optimal objective: 7
+0.0027928352356
+==================================================================
+C_D.lp
+Read LP format model from file C_D.lp
+Reading time = 0.00 seconds
+: 16 rows, 19 columns, 62 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 16 rows, 19 columns and 62 nonzeros
+Model fingerprint: 0xb559f27b
+Variable types: 1 continuous, 18 integer (6 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 13 rows and 11 columns
+Presolve time: 0.00s
+Presolved: 3 rows, 8 columns, 16 nonzeros
+Variable types: 0 continuous, 8 integer (0 binary)
+Found heuristic solution: objective 3.0000000
+
+Root relaxation: objective 1.500000e+00, 3 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 infeasible    0         3.00000    3.00000  0.00%     -    0s
+
+Explored 0 nodes (3 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 1: 3 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+Optimal objective: 3
+0.00131487846375
+==================================================================
+C_D_AB.lp
+Read LP format model from file C_D_AB.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xb7659134
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 26 rows and 15 columns
+Presolve time: 0.00s
+Presolved: 10 rows, 16 columns, 84 nonzeros
+Variable types: 0 continuous, 16 integer (0 binary)
+Found heuristic solution: objective 67.0000000
+Found heuristic solution: objective 32.0000000
+
+Root relaxation: objective 4.000000e+00, 6 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    4.00000    0    2   32.00000    4.00000  87.5%     -    0s
+H    0     0                       8.0000000    4.00000  50.0%     -    0s
+H    0     0                       7.0000000    4.00000  42.9%     -    0s
+
+Cutting planes:
+  MIR: 2
+  Mod-K: 2
+
+Explored 1 nodes (6 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 4: 7 8 32 67 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 7.000000000000e+00, best bound 7.000000000000e+00, gap 0.0000%
+Optimal objective: 7
+0.00229406356812
+==================================================================
+B_C_D.lp
+Read LP format model from file B_C_D.lp
+Reading time = 0.00 seconds
+: 24 rows, 25 columns, 120 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 24 rows, 25 columns and 120 nonzeros
+Model fingerprint: 0x677787da
+Variable types: 1 continuous, 24 integer (8 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 19 rows and 15 columns
+Presolve time: 0.00s
+Presolved: 5 rows, 10 columns, 32 nonzeros
+Variable types: 0 continuous, 10 integer (0 binary)
+Found heuristic solution: objective 10.0000000
+
+Root relaxation: objective 2.000000e+00, 4 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.00000    0    4   10.00000    2.00000  80.0%     -    0s
+H    0     0                       4.0000000    2.00000  50.0%     -    0s
+     0     0    2.00000    0    4    4.00000    2.00000  50.0%     -    0s
+
+Explored 1 nodes (4 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: 4 10 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.000000000000e+00, best bound 4.000000000000e+00, gap 0.0000%
+Optimal objective: 4
+0.00148415565491
+==================================================================
+A_B_C_D.lp
+Read LP format model from file A_B_C_D.lp
+Reading time = 0.00 seconds
+: 36 rows, 31 columns, 242 nonzeros
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (linux64)
+Thread count: 6 physical cores, 12 logical processors, using up to 12 threads
+Optimize a model with 36 rows, 31 columns and 242 nonzeros
+Model fingerprint: 0xe4779d64
+Variable types: 1 continuous, 30 integer (10 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 5e+00]
+  Objective range  [1e+00, 2e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Presolve removed 27 rows and 19 columns
+Presolve time: 0.00s
+Presolved: 9 rows, 12 columns, 68 nonzeros
+Variable types: 0 continuous, 12 integer (0 binary)
+Found heuristic solution: objective 33.0000000
+
+Root relaxation: objective 2.500000e+00, 5 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    2.50000    0    5   33.00000    2.50000  92.4%     -    0s
+H    0     0                       5.0000000    2.50000  50.0%     -    0s
+
+Cutting planes:
+  MIR: 4
+
+Explored 1 nodes (5 simplex iterations) in 0.00 seconds
+Thread count was 12 (of 12 available processors)
+
+Solution count 2: 5 33 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.000000000000e+00, best bound 5.000000000000e+00, gap 0.0000%
+Optimal objective: 5
+0.00209808349609
